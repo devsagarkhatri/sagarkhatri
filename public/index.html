@@ -24,11 +24,32 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Sagar Khatri | Portfolio</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="blob-c">
+      <div class="shape-blob one" id="one"></div>
+    </div>
     <div id="root"></div>
+    <script>
+      let circle = document.getElementById("one");
+      window.addEventListener("mousemove", function (evt) {
+        let xcoord = evt.clientX;
+        let ycoord = evt.clientY;
+        // circle.style.top = ycoord - 100 + "px";
+        // circle.style.left = xcoord - 100 + "px";
+
+        circle.animate({
+          top: ycoord - 100 + "px",
+          left: xcoord - 100 + "px"
+        }, {
+          duration: 3000,
+          fill: "forwards"
+        });
+
+      });
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
