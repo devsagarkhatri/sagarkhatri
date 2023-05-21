@@ -34,8 +34,8 @@
 }
 
 /* Cursor for special fields */
-a:hover {
-  cursor: pointer
+a:hover, .contrahire:hover {
+  cursor: pointer;
 }
 
 input[type=text],

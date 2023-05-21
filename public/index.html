@@ -5,25 +5,46 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
+    <meta property="og:locale" content="en_US">
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index,follow">
+    <meta property="og:image" content="https://sagarkhatri.vercel.app/static/media/logo.4d9aee460811855fdf94.png">
+    <meta property="og:url" content="https://sagarkhatri.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Sagar Khatri's portfolio website. As an experienced software engineer with expertise in React, Javascript, Java and other programming languages. My passion for emerging technologies has recently led me to explore blockchain and its potential applications in various industries. I am eager to apply my expertise to contribute to the development of blockchain-based solutions. Click to know more...">
+    <meta property="og:keywords" content="sagar, khatri, portfolio, MCA, MMMUT, computer">
+    <meta property="og:keywords" content="nagarro, microsoft, google, coding, ninjas,iit, kanpur, varanasi, developer, portfolio, resume, contra, freelance, remote,job, jobs, work">
+    <meta property="og:keywords" content="html, html5, css, css3, javascript, css, bootstrap, Java, spring, springboot, react, reactjs, software engineer, frontend, front-end, backend, blockchain, nft, nfts, block, chain, chatgpt,gpt, chat, midjourney, language, model, llm, prompt">
+    <meta name="description"
+      content="Sagar Khatri's portfolio website. As an experienced software engineer with expertise in React, Javascript, Java and other programming languages. My passion for emerging technologies has recently led me to explore blockchain and its potential applications in various industries. I am eager to apply my expertise to contribute to the development of blockchain-based solutions. Click to know more..."
     />
+
+    <meta name="keywords" content="sagar, khatri, portfolio, MCA, MMMUT, computer">
+    <meta name="keywords" content="nagarro, microsoft, google, coding, ninjas,iit, kanpur, varanasi, developer, portfolio, resume, contra, freelance, remote,job, jobs, work">
+    <meta name="keywords" content="html, html5, css, css3, javascript, css, bootstrap, Java, spring, springboot, react, reactjs, software engineer, frontend, front-end, backend, blockchain, nft, nfts, block, chain, chatgpt,gpt, chat, midjourney, language, model, llm, prompt">
+
+    <meta name="twitter:creator" content="@DevSagarKhatri">
+    <meta name="twitter:site" content="@DevSagarKhatri">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sagar Khatri - Portfolio Website">
+    <meta name="twitter:description"
+      content="Sagar Khatri's portfolio website. As an experienced software engineer with expertise in React, Javascript, Java and other programming languages. My passion for emerging technologies has recently led me to explore blockchain and its potential applications in various industries. I am eager to apply my expertise to contribute to the development of blockchain-based solutions. Click to know more...">
+    
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <!-- Calendly badge widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script
+      type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/devsagarkhatri/intro', text: 'Schedule a 1:1 with me', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
+    <!-- Calendly badge widget end -->
+    
+
     <title>Sagar Khatri | Portfolio</title>
   </head>
   <body>
@@ -32,6 +53,46 @@
       <div class="shape-blob one" id="one"></div>
     </div>
     <div id="root"></div>
+    <!-- Calendly badge widget end -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script
+      type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/devsagarkhatri/intro', text: 'Schedule a 1:1 with me', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
+    <!-- Calendly badge widget end -->
+    <script>
+      /* eslint-disable eslint-comments/no-unlimited-disable */
+      /* eslint-disable unicorn/no-abusive-eslint-disable */
+      /* eslint-disable */
+      /**
+      * Contra Embed SDK
+      * Copyright (c) 2022, Contra.Work Inc. All rights reserved.
+      */
+     window.onload=function(){
+      let button = document.getElementById("contrahire");
+      button.style="cursor:pointer;";
+      let theme = 'light';
+      let username = 'devsagarkhatri';
+      let analyticsUserId = 'f0352c6a-8971-448a-8353-666ffac05b39';
+
+      let image = document.createElement('img');
+      image.alt = 'Hire Me on Contra';
+      image.src = '%PUBLIC_URL%/hireme.png';
+      image.height="50px";
+      image.srcset = '%PUBLIC_URL%/hireme.png';
+      image.style = 'border-width:0;max-height:contain';
+
+      let anchor = document.createElement('a');
+      anchor.rel = 'nofollow';
+      anchor.target = '_blank';
+
+      let utmSuffix = ['?utm_campaign=HireMeOnContra','utm_medium=' + analyticsUserId,].filter(Boolean).join('&');
+
+      anchor.href = 'https://contra.com/' + username + utmSuffix;
+      anchor.title = 'Contra.com';
+
+      anchor.appendChild(image);
+      document.getElementById("contrahire").appendChild(anchor);
+     }
+    </script>
     <script>
       let circle = document.getElementById("one");
       window.addEventListener("mousemove", function (evt) {
@@ -50,6 +111,7 @@
 
       });
     </script>
+    
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -61,4 +123,5 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  
 </html>

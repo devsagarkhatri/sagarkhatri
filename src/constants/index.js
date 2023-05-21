@@ -178,7 +178,7 @@ const testimonials = [
       "Sagar has a good hold of frontend development and is also proficient at building things from scratch with a long-term view in mind.",
     name: "Chirag Udeshi",
     designation: "SDE",
-    company: " ",
+    company: "Credit Suisse",
     image: chirag,
   },
   // {

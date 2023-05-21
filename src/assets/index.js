@@ -26,15 +26,15 @@ import nagarro from "./company/nagarro.webp";
 import coding from "./company/coding.png";
 import iit from "./company/iit.png";
 
-import rapidresume from "./projects/rapidresume.png";
-import rapidrender from "./projects/rapidrender.png";
-import urlzip from "./projects/urlzip.png";
-import snappypost from "./projects/snappypost.png";
-import weather from "./projects/weather.png";
-import todo from "./projects/todo.png";
-import snake from "./projects/snake.jpeg";
-import stone from "./projects/stone.png";
-import myapp from "./projects/my-app.png";
+import rapidresume from "./projects/rapidresume1.png";
+import rapidrender from "./projects/rapidrender1.png";
+import urlzip from "./projects/urlzip1.png";
+import snappypost from "./projects/snappypost1.png";
+import weather from "./projects/weather1.png";
+import todo from "./projects/todo1.png";
+import snake from "./projects/snake1.jpeg";
+import stone from "./projects/stone1.png";
+import myapp from "./projects/my-app1.png";
 
 import chirag from "./feedback/chirag.jpeg";
 //npm install @react-three/drei@9.68.2 @react-three/fiber@8.13.0 framer-motion@10.12.10 react-tilt@1.0.2 vite@4.3.5 --save

@@ -60,13 +60,15 @@ const MirrorCanvas = () => {
       dpr={[1, 2]}
       camera={{ position: [20, 5, 5], fov: 16 }}
       gl={{ preserveDrawingBuffer: true }}
+      
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
-          enableZoom={true}
+          enableZoom={false}
           enableRotate={true}
           maxPolarAngle={Math.PI}
           minPolarAngle={Math.PI / 2}
+
         />
         <Mirrors isMobile={isMobile} />
       </Suspense>

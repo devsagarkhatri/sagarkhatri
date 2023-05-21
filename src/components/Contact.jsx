@@ -10,7 +10,8 @@ import linkedin from "../assets/social/linkedin.png";
 import twitter from "../assets/social/twitter.png";
 import github from "../assets/social/github.png";
 import peerlist from "../assets/social/Peerlist.png";
-import vercel from "../assets/vercel.png";
+import contra from "../assets/social/contra.png";
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -83,18 +84,30 @@ const Contact = () => {
         >
           <div style={{ display: "flex", gap: "20px" }}>
             <p className={styles.sectionSubText}>Get in touch</p>
-            <a href="https://github.com/devsagarkhatri" target={"_blank"}>
+            <a
+              href="https://github.com/devsagarkhatri"
+              target={"_blank"}
+              rel="noreferrer"
+              aria-label={"github"}
+            >
               <img
                 className="social"
                 src={github}
+                alt={"github"}
                 height="auto"
                 width={"30px"}
               />
             </a>{" "}
-            <a href="https://twitter.com/DevSagarKhatri" target={"_blank"}>
+            <a
+              href="https://twitter.com/DevSagarKhatri"
+              target={"_blank"}
+              rel="noreferrer"
+              aria-label={"twitter"}
+            >
               <img
                 className="social"
                 src={twitter}
+                alt={twitter}
                 height="auto"
                 width={"30px"}
               />
@@ -102,18 +115,41 @@ const Contact = () => {
             <a
               href="https://www.linkedin.com/in/sagarkhatri/"
               target={"_blank"}
+              rel="noreferrer"
+              aria-label={"linkedin"}
             >
               <img
                 className="social"
                 src={linkedin}
+                alt={linkedin}
                 height="auto"
                 width={"30px"}
               />
             </a>{" "}
-            <a href="https://peerlist.io/devsagarkhatri" target={"_blank"}>
+            <a
+              href="https://contra.com/devsagarkhatri"
+              target={"_blank"}
+              rel="noreferrer"
+              aria-label={"contra"}
+            >
+              <img
+                className="social"
+                src={contra}
+                alt={"contra"}
+                height="auto"
+                width={"30px"}
+              />
+            </a>{" "}
+            <a
+              href="https://peerlist.io/devsagarkhatri"
+              target={"_blank"}
+              rel="noreferrer"
+              aria-label={"peerlist"}
+            >
               <img
                 className="social"
                 src={peerlist}
+                alt={peerlist}
                 height="auto"
                 width={"30px"}
               />
@@ -170,20 +206,26 @@ const Contact = () => {
                 }}
               />
             </label>
-
-            <button
-              type="submit"
-              className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
-              style={{
-                paddingLeft: "28px",
-                paddingRight: "28px",
-                background: "linear-gradient(to right,#3c55a9,#633fd3)",
-                boxShadow: "0 0 15px 1px #4662bd",
-                borderRadius: "30px",
-              }}
-            >
-              {loading ? "Sending..." : "Send"}
-            </button>
+            <span className="flex flex-row justify-between items-center">
+              <button
+                type="submit"
+                className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+                style={{
+                  paddingLeft: "28px",
+                  paddingRight: "28px",
+                  background: "linear-gradient(to right,#3c55a9,#633fd3)",
+                  boxShadow: "0 0 15px 1px #4662bd",
+                  borderRadius: "30px",
+                }}
+              >
+                {loading ? "Sending..." : "Send"}
+              </button>
+              {" or "}
+              <div
+                id="contrahire"
+                className="contrahire shadow-md shadow-primary rounded-xl"
+              ></div>
+            </span>
           </form>
         </motion.div>
 
